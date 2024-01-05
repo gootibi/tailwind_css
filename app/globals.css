@@ -15,7 +15,57 @@
         @apply underline text-blue-600 hover:text-purple-500 transition decoration-wavy underline-offset-2;
     }
 
-    .btn {
-        @apply bg-blue-600;
+    input,
+    select {
+        @apply text-slate-500 p-1 mb-1 border border-slate-300 rounded-sm outline-none;
     }
+
+    select {
+        @apply pr-8
+    }
+
+    input[type="text"] {
+        @apply placeholder:italic disabled:bg-slate-100;
+    }
+
+    /* input[type="date"] {
+       
+    } */
+
+    input[type="checkbox"] {
+        @apply p-2 accent-purple-500 mr-1 mt-0.5;
+    }
+
+    label {
+        @apply text-sm text-slate-700 font-medium leading-4;
+    }
+
+    .btn {
+        @apply px-4 py-2 rounded-lg hover:opacity-80 transition hover:duration-300 disabled:bg-slate-400/30 hover:disabled:opacity-100;
+    }
+
+    /* .btn:hover {
+        @apply transition duration-300 opacity-80;
+    } */
+
+    .btn-primary {
+        @apply bg-blue-600 text-white;
+    }
+
+    .btn-secondary {
+        @apply bg-slate-800 text-white;
+    }
+
+    .Select {
+        @apply  w-32 border border-slate-300 rounded-sm outline-none inline-block cursor-pointer transition;
+      }
+
+      .Select .child {
+        @apply text-slate-500 px-2 py-0.5 border-t;
+      }
+
+      .Select ul li {
+        @apply hover:bg-slate-100;
+      }
+      
 }
